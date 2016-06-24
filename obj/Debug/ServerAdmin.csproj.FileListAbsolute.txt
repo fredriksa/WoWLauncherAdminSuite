@@ -1,0 +1,10 @@
+c:\users\freddan962\documents\visual studio 2015\Projects\ServerAdmin\ServerAdmin\bin\Debug\ServerAdmin.exe.config
+c:\users\freddan962\documents\visual studio 2015\Projects\ServerAdmin\ServerAdmin\bin\Debug\ServerAdmin.exe
+c:\users\freddan962\documents\visual studio 2015\Projects\ServerAdmin\ServerAdmin\bin\Debug\ServerAdmin.pdb
+c:\users\freddan962\documents\visual studio 2015\Projects\ServerAdmin\ServerAdmin\obj\Debug\ServerAdmin.Form1.resources
+c:\users\freddan962\documents\visual studio 2015\Projects\ServerAdmin\ServerAdmin\obj\Debug\ServerAdmin.Properties.Resources.resources
+c:\users\freddan962\documents\visual studio 2015\Projects\ServerAdmin\ServerAdmin\obj\Debug\ServerAdmin.csproj.GenerateResource.Cache
+c:\users\freddan962\documents\visual studio 2015\Projects\ServerAdmin\ServerAdmin\obj\Debug\ServerAdmin.exe
+c:\users\freddan962\documents\visual studio 2015\Projects\ServerAdmin\ServerAdmin\obj\Debug\ServerAdmin.pdb
+c:\users\freddan962\documents\visual studio 2015\Projects\ServerAdmin\ServerAdmin\obj\Debug\ServerAdmin.PatchesForm.resources
+c:\users\freddan962\documents\visual studio 2015\Projects\ServerAdmin\ServerAdmin\obj\Debug\ServerAdmin.csprojResolveAssemblyReference.cache
