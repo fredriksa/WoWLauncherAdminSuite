@@ -35,6 +35,42 @@ namespace ServerAdmin
 
         private void generateButton_Click(object sender, EventArgs e)
         {
+            if (nameField.Text == string.Empty)
+            {
+                MessageBox.Show("You must enter a name!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (websiteField.Text == string.Empty)
+            {
+                MessageBox.Show("You must enter a website!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (versionCombo.SelectedIndex != 0)
+            {
+                MessageBox.Show("You must select a version!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (patchField.Text == string.Empty)
+            {
+                MessageBox.Show("You must enter a patch directory!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (downloadField.Text == string.Empty)
+            {
+                MessageBox.Show("You must enter a download directory!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (realmlistField.Text == string.Empty)
+            {
+                MessageBox.Show("You must enter a realmlist!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             BinaryWriter writer = new BinaryWriter(File.Open("server.dat", FileMode.Create));
 
             writer.Write(formVersion);

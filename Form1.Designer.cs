@@ -202,7 +202,7 @@
             this.Controls.Add(this.nameField);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Admin Suite";
+            this.Text = "Admin Suite 1.0";
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
