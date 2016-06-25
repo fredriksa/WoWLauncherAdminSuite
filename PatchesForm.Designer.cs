@@ -31,15 +31,15 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PatchesForm));
             this.selectButton = new System.Windows.Forms.Button();
             this.patchList = new System.Windows.Forms.ListBox();
-            this.configureButton = new System.Windows.Forms.Button();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.statusLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.cfgButton = new System.Windows.Forms.Button();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // selectButton
             // 
-            this.selectButton.Location = new System.Drawing.Point(13, 189);
+            this.selectButton.Location = new System.Drawing.Point(12, 143);
             this.selectButton.Name = "selectButton";
             this.selectButton.Size = new System.Drawing.Size(259, 23);
             this.selectButton.TabIndex = 2;
@@ -52,24 +52,14 @@
             this.patchList.FormattingEnabled = true;
             this.patchList.Location = new System.Drawing.Point(13, 12);
             this.patchList.Name = "patchList";
-            this.patchList.Size = new System.Drawing.Size(259, 160);
+            this.patchList.Size = new System.Drawing.Size(259, 121);
             this.patchList.TabIndex = 4;
-            // 
-            // configureButton
-            // 
-            this.configureButton.Location = new System.Drawing.Point(13, 226);
-            this.configureButton.Name = "configureButton";
-            this.configureButton.Size = new System.Drawing.Size(259, 23);
-            this.configureButton.TabIndex = 3;
-            this.configureButton.Text = "Configure";
-            this.configureButton.UseVisualStyleBackColor = true;
-            this.configureButton.Click += new System.EventHandler(this.configureButton_Click);
             // 
             // statusStrip1
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.statusLabel});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 261);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 203);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(284, 22);
             this.statusStrip1.TabIndex = 3;
@@ -80,13 +70,23 @@
             this.statusLabel.Name = "statusLabel";
             this.statusLabel.Size = new System.Drawing.Size(0, 17);
             // 
+            // cfgButton
+            // 
+            this.cfgButton.Location = new System.Drawing.Point(12, 172);
+            this.cfgButton.Name = "cfgButton";
+            this.cfgButton.Size = new System.Drawing.Size(259, 23);
+            this.cfgButton.TabIndex = 5;
+            this.cfgButton.Text = "Configure";
+            this.cfgButton.UseVisualStyleBackColor = true;
+            this.cfgButton.Click += new System.EventHandler(this.cfgButton_Click_1);
+            // 
             // PatchesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 283);
+            this.ClientSize = new System.Drawing.Size(284, 225);
+            this.Controls.Add(this.cfgButton);
             this.Controls.Add(this.statusStrip1);
-            this.Controls.Add(this.configureButton);
             this.Controls.Add(this.patchList);
             this.Controls.Add(this.selectButton);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -104,8 +104,8 @@
 
         private System.Windows.Forms.Button selectButton;
         private System.Windows.Forms.ListBox patchList;
-        private System.Windows.Forms.Button configureButton;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel statusLabel;
+        private System.Windows.Forms.Button cfgButton;
     }
 }

@@ -47,12 +47,6 @@ namespace ServerAdmin
                 return;
             }
 
-            if (versionCombo.SelectedIndex != 0)
-            {
-                MessageBox.Show("You must select a version!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
             if (patchField.Text == string.Empty)
             {
                 MessageBox.Show("You must enter a patch directory!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);

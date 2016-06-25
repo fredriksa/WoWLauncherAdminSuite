@@ -39,6 +39,8 @@ namespace ServerAdmin
 
             for (int i = 0; i < ofd.SafeFileNames.Length; i++)
             {
+                if (fileNames.ContainsKey(ofd.SafeFileNames[i])) continue;
+
                 fileNames.Add(ofd.SafeFileNames[i], ofd.FileNames[i]);
                 patchList.Items.Add($"{ofd.SafeFileNames[i]}"); 
             }
@@ -46,7 +48,7 @@ namespace ServerAdmin
             
         }
 
-        private void configureButton_Click(object sender, EventArgs e)
+        private void cfgButton_Click_1(object sender, EventArgs e)
         {
             foreach (var file in fileNames)
                 hash.Add(file.Key, computeHash(file.Value));
@@ -62,11 +64,11 @@ namespace ServerAdmin
                 writer.Write(pair.Value.Length);
                 writer.Write(pair.Value);
             }
-            
+
             writer.Close();
 
             statusLabel.Text = $"{DateTime.Now.ToString("HH:mm:ss")}: Configured Patch File";
- 
+
         }
 
         private byte[] computeHash(string file)
